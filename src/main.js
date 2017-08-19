@@ -6,23 +6,11 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import firstCom from './components/firstCom.vue'
 import secondcomponent from './components/secondCom.vue'
+import {router} from './config/routes'
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(VueResource);
-const router = new VueRouter({
-  mode: 'history',
-  base: __dirname,
-  routes: [
-    {
-      path: '/first',
-      component: firstCom
-    },
-    {
-      path: '/second',
-      component: secondcomponent
-    }
-  ]
-})
+
 new Vue({
   router: router,
   el: '#app',
