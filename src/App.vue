@@ -5,9 +5,7 @@
       <el-col :span="3">
         <m_sidebar></m_sidebar>
       </el-col>
-      <el-col :span="21">
-        <a href="/first">click me first</a>
-        <a href="/second">click me second</a>
+      <el-col :span="21" style="padding-top: 30px">
         <router-view class="view"></router-view>
       </el-col>
     </el-row>    

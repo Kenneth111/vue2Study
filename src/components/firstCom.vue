@@ -1,20 +1,36 @@
 <template>
   <div id="firstCom">
-    <h1>I am a component.</h1>
-    <a> written by {{ author }} </a>
+    <el-col :span="10">
+      <el-form ref="form" :model="form" label-width="120px">
+        <el-form-item label="user name">
+          <el-input v-model="form.name"></el-input>
+        </el-form-item>
+        <el-form-item label="password">
+          <el-input v-model="form.pwd"></el-input>
+        </el-form-item>      
+        <el-form-item>
+          <el-button type="primary" @click="onSubmit">Create</el-button>
+          <el-button>Cancel</el-button>
+        </el-form-item>
+      </el-form>
+    </el-col>
   </div>
 </template>
 
-<script type="text/javascript">
-    export default {
-      data () {
-          return {
-          author: "Jinkey"
-          }
+<script>
+  export default {
+    data() {
+      return {
+        form: {
+          name: '',
+          pwd: '',
+        }
+      }
+    },
+    methods: {
+      onSubmit() {
+        console.log('submit!');
       }
     }
+  }
 </script>
-
-<style>
-
-</style>
