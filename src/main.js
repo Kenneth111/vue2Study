@@ -4,8 +4,6 @@ import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-import firstCom from './components/firstCom.vue'
-import secondcomponent from './components/secondCom.vue'
 import {router} from './config/routes'
 Vue.use(ElementUI)
 Vue.use(VueRouter)
