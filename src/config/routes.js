@@ -3,7 +3,7 @@ import firstCom from '../components/firstCom.vue'
 import secondcomponent from '../components/secondCom.vue'
 
 export const router = new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   base: __dirname,
   routes: [
     {

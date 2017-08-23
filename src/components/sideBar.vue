@@ -39,9 +39,9 @@
         console.log("handle select");
         console.log(key, keyPath);
         if (key == 2){
-          window.location.href = '/#/first';
+          this.$router.push('first');
         } else if (key == 3){
-          window.location.href = '/#/second';
+          this.$router.push('second');
         }
       }
     }
