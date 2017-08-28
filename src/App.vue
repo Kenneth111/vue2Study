@@ -1,11 +1,11 @@
 <template>
-  <div id="app">  
+  <div id="app" class="container">  
     <m_header></m_header>
-    <el-row class="tac">
-      <el-col :span="3">
-        <m_sidebar></m_sidebar>
+    <el-row class="container">
+      <el-col :span="3" class="container">
+        <m_sidebar class="container"></m_sidebar>
       </el-col>
-      <el-col :span="21" style="padding-top: 30px">
+      <el-col :span="21" class="content">
         <router-view class="view"></router-view>
       </el-col>
     </el-row>    
@@ -23,7 +23,17 @@
   }
 </script>
 <style>
+html {
+  height: 100%;
+}
 body {
   font-family: Helvetica, sans-serif;
+  height: 100%;
+}
+.container {
+  height: 100%;
+}
+.content {
+  padding: 25px;
 }
 </style>

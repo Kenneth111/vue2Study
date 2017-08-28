@@ -1,6 +1,6 @@
 <template>
   <div id="m_sidebar">
-    <el-menu theme="dark" default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" @select="handleSelect">
+    <el-menu default-active="2" class="el-menu-vertical-demo container" @open="handleOpen" @close="handleClose" @select="handleSelect">
         <el-submenu index="1">
         <template slot="title"><i class="el-icon-message"></i>Navigator One</template>
         <el-menu-item-group title="Group One">
